@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arley Diaz Vergara</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Arley Diaz Vergara</h1> 
         <nav>
-            <ul>
-                <li><a href="https://github.com/diazvergaraarley">GitHub</a></li>
-                <li><a href="/mascotas.html">Mascotas</a></li>
-            </ul>
+            <u class="pets">
+                <button>
+                    <l><a href="https://github.com/diazvergaraarley">GitHub</a></l>
+                </button>
+                <button>
+                    <l><a href="mascotas.html">Mascotas</a></l>
+                </button>
+            </u>
         </nav>
     </header>
 
@@ -23,7 +28,9 @@
                 <h2>My name is Arley, I'm 27 years old(...)</h2>
             </h1>
         </p>
-        <ul>
+        <span class="here">Here are some works I've done:</span>
+        <ul class="pets">
+            
             <button>
                 <a href="https://github.com/diazvergaraarley/user_history">USER HISTORY</a>
             </button>
@@ -34,9 +41,8 @@
                 <a href="https://github.com/diazvergaraarley/GAG-Generic-Adventure-Game">Generic Adventure Game</a>
             </button>
         </ul>
-        <p>
-            Contact me:
-            <form action="/enviar-datos" method="POST">
+        <span>
+            <form class="contact" action="/enviar-datos" method="POST">
 
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="username" placeholder="Your name">
@@ -50,7 +56,7 @@
                 <button type="submit">Sent data</button>
             </form>
 
-        </p>
+        </span>
     </section>
 </body>
 </html>
