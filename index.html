@@ -10,40 +10,33 @@
     <header>
         <h1>Arley Diaz Vergara</h1> 
         <nav>
-            <u class="pets">
-                <button>
-                    <l><a href="https://github.com/diazvergaraarley">GitHub</a></l>
-                </button>
-                <button>
-                    <l><a href="mascotas.html">Mascotas</a></l>
-                </button>
-            </u>
+            <ul>
+                <li class="subt"><a href="https://github.com/diazvergaraarley">GitHub</a></li>
+                <li class="subt"><a href="mascotas.html">Mascotas</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section>
-        <p>
+    <section >
+        <article class="sect">
             <h1>
                 About me:
                 <h2>My name is Arley, I'm 27 years old(...)</h2>
             </h1>
-        </p>
-        <span class="here">Here are some works I've done:</span>
-        <ul class="pets">
-            
-            <button>
-                <a href="https://github.com/diazvergaraarley/user_history">USER HISTORY</a>
-            </button>
-            <button>
-                <a href="https://github.com/diazvergaraarley/prueba-de-desarrollo-m1">Prueba de Desarrollo</a>
-            </button>
-            <button>
-                <a href="https://github.com/diazvergaraarley/GAG-Generic-Adventure-Game">Generic Adventure Game</a>
-            </button>
-        </ul>
-        <span>
-            <form class="contact" action="/enviar-datos" method="POST">
+        </article>
+        <article class="sect">
+            <h3>Here are some proyects I've worked on:</h3>
 
+            <ul class="pets">
+                <a class="btn" href="https://github.com/diazvergaraarley/prueba-de-desarrollo-m1">Prueba de Desarrollo</a>
+                <a class="btn" href="https://github.com/diazvergaraarley/user_history">User History</a>
+                <a class="btn" href="https://github.com/diazvergaraarley/GAG-Generic-Adventure-Game">Generic Adventure Game</a>
+            </ul>
+        </article>
+
+        <form class="sect" action="/enviar-datos" method="POST">
+            
+                <h1>Contact me</h1>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="username" placeholder="Your name">
                         
@@ -53,10 +46,11 @@
                 <input type="email" id="email" name="user_email" placeholder="Your email" required>
 
                 <br><br>
-                <button type="submit">Sent data</button>
+                <button class="send" type="submit">Send</button>
             </form>
-
-        </span>
     </section>
+    <footer>
+        <p>&reg; Arley Díaz Portafolio 2026</p>
+    </footer>
 </body>
 </html>

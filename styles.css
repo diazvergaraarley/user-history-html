@@ -1,34 +1,59 @@
+*{
+  background-color: w;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 header {
-  background-color: #2c3e50;
+  background-color: #a2a9b1;
   color: white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
+  list-style: none;
+}
+
+.contact{
+    background-color: #5d6d7e;
+    text-align: center;
+    padding: 10px ;
+    border: 5px solid #1c2470;
+    margin: 100px;
+    font-weight: bold;
+    color: #180303;
+  }
+.sect {
+  background-color: #c8cccf;
+  text-align: center;
+  padding: 10px ;
+  border: 5px solid whitesmoke;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 50px;
 }
 
 h1 {
-    font-size: 2.5rem;   /* más grande */
-    margin: 0;
-    text-align: center;
-    
+  font-size: 2.5rem;   /* más grande */
+  margin: 15px;
+  text-align: center;
+  
 }
 .here{
     display: flex;          /* las pone en fila */
-    gap: 20px;
     justify-content: center;
     flex-wrap: wrap; 
     background-color: #ecf0f1;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     margin: 0;
-}
+  }
 span {
   
-  background-color: #ecf0f1;
+  background-color: #758f96;
 }
 
 section {
@@ -40,24 +65,24 @@ section {
 
 a {
   color: #2980b9;
+  border-radius: 50px;
 }
 
-a:hover {
-  color: #e74c3c;
-}
 
 img {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-a {
-  color: #2980b9;
-  text-decoration: none;
+.subt:hover{
+  background-color: whitesmoke;
+  color: #413a39;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #e74c3c;
+  color: #413a39;
+  background-color: whitesmoke;
   text-decoration: underline;
 }
 
@@ -75,12 +100,15 @@ a:hover {
 }
 
 
+
 button{
     background-color: #2c3e50;  /* mismo estilo que header */
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 30px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    text-decoration: none;
+    list-style: none;
 }
 
 .pets figcaption {
@@ -102,7 +130,7 @@ footer {
   background-color: #2c3e50;  /* mismo estilo que header */
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   margin-top: 30px;
 }
 footer a {
@@ -115,8 +143,35 @@ footer a:hover {
   color: #16a085;
   text-decoration: underline;
 }
-.contact{
-    background-color: #2c3e50;
+ul {
+    list-style: none; /* quita viñetas */
+    padding: 0;
+}
+
+.subt {
+    display: inline-block;
+    background-color: #c1cbd4;
+    padding: 8px 20px;
+    margin-top: 30px;
+    border-radius: 999px;
+}
+.btn{
+    background-color: #667079;  /* mismo estilo que header */
+    color: white;
     text-align: center;
-    padding: 11px;
+    padding: 15px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.subt a {
+    text-decoration: none;
+    color: #1c2470;
+    font-weight: bold;
+}
+.send{
+  color: white;
+  background-color: #667079;
+  border-radius: 10px;
+  font-size: large;
 }
