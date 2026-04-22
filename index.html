@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    
     <!-- HEADER -->
     <header>
         <h1>Arley Diaz Vergara</h1> 
-        <nav>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav id="nav-menu">
             <ul>
-                <li class="subt"><a href="https://github.com/diazvergaraarley">My GitHub</a></li>
-                <li class="subt"><a href="mascotas.html">My pets</a></li>
+                <li><a href="#presentation">Presentation</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+                <li class="subt"><a href="https://github.com/diazvergaraarley">GitHub</a></li>
+                <li class="subt"><a href="mascotas.html">Pets</a></li>
             </ul>
         </nav>
     </header>
     <!-- HERO SECTION -->
     <a href="#" class="scroll-top">↑</a>
-    <section class="sect">
+    <section id="presentation" class="sect">
         <h2>Hi, I’m Arley 👋</h2>
         <h3>Backend & Data Analysis Enthusiast</h3>
         <p>
@@ -28,32 +37,32 @@
             in web development and data technologies.
         </p>
     </section>
-
+    
     <!-- ABOUT ME -->
-    <section class="sect">
+    <section id="about" class="sect">
         <h2>About Me</h2>
         <p>
             I’m a programming student with a growing focus on backend development and data analysis. 
             I’m currently building a strong foundation in HTML, CSS, and Python, and continuing my 
             learning path toward JavaScript and SQL.
         </p>
-
+        
         <p>
             I have developed projects such as an inventory management system and a console-based RPG game 
             with progression mechanics and data persistence using CSV and JSON. These projects demonstrate 
             my ability to design structured solutions and work with data.
         </p>
-
+        
         <p>
             I’m especially interested in applying data analysis to global football, combining my technical 
             skills with my personal interests.
         </p>
     </section>
-
+    
     <!-- SKILLS -->
-    <section class="sect">
+    <section id="skills" class="sect">
         <h2>Skills</h2>
-
+        
         <h3 class="here">Languages</h3>
         <div class="skills-container">
             <a href="#python">
@@ -76,11 +85,11 @@
             </a>
         </div>
     </section>
-
+    
     <!-- PROJECTS -->
-    <section class="sect">
+    <section id="projects" class="sect">
         <h2>Projects</h2>
-        <div class="proyect-container">
+        <div class="project-container">
             <a class="btn" href="https://github.com/diazvergaraarley/user_history">
                 User History
             </a>
@@ -92,25 +101,25 @@
             </a>
         </div>
     </section>
-
+    
     <!-- CONTACT -->
-    <section class="sect">
+    <section id="contact" class="sect">
         <h1>Contact Me</h1>
         <form action="/enviar-datos" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="username" placeholder="Your name">
-
+            
             <br><br>
-
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="user_email" placeholder="Your email" required>
-
+            
             <br><br>
             <button class="send" type="submit">Send</button>
         </form>
     </section>
     <section>
-
+        
         <article id="python" class="detail-card">
             <h2>Python</h2>
             <img src="imgs/python.jpg">
@@ -118,7 +127,7 @@
                 aqui va la descripción
             </p>
         </article>
-
+        
         <article id="html" class="detail-card">
             <h2>HTML</h2>
             <img src="imgs/html.png">
@@ -147,12 +156,14 @@
                 aqui va la descripción
             </p>
         </article>
+        
     </section>
-
+    
     <!-- FOOTER -->
     <footer>
         <p>&reg; Arley Díaz Portfolio 2026</p>
     </footer>
-
+    
+    <script src="script.js"></script>
 </body>
 </html>
