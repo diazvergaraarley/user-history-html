@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic meta config -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arley Diaz Vergara</title>
+    <!-- Main CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,10 +13,10 @@
     <!-- HEADER -->
     <header>
         <h1>Arley Diaz Vergara</h1> 
-
-        <!-- BOTÓN HAMBURGUESA -->
+    <!-- Toggle button for mobile menu -->
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
+        
+        <!-- Navigation + hamburger menu -->
         <nav id="nav-menu">
             <ul>
                 <li><a href="#presentation">Presentation</a></li>
@@ -27,8 +29,9 @@
             </ul>
         </nav>
     </header>
-    <!-- HERO SECTION -->
+    <!-- Scroll button -->
     <a href="#" class="scroll-top">↑</a>
+     <!-- ===== PRESENTATION ===== -->
     <section id="presentation" class="sect">
         <h2>Hi, I’m Arley 👋</h2>
         <h3>Backend & Data Analysis Enthusiast</h3>
@@ -62,7 +65,7 @@
     <!-- SKILLS -->
     <section id="skills" class="sect">
         <h2>Skills</h2>
-        
+        <!-- Skills grouping -->
         <h3 class="here">Languages</h3>
         <div class="skills-container">
             <a href="#python">
@@ -89,6 +92,7 @@
     <!-- PROJECTS -->
     <section id="projects" class="sect">
         <h2>Projects</h2>
+        <!-- Grid responsive -->
         <div class="project-container">
             <a class="btn" href="https://github.com/diazvergaraarley/user_history">
                 User History
@@ -118,8 +122,10 @@
             <button class="send" type="submit">Send</button>
         </form>
     </section>
+    <!-- ===== SKILL DETAILS (extra)===== -->
     <section class="pets-grid">
-        
+        <!-- Each article represents a detailed skill card -->
+    <!-- Uses hover interaction with CSS (overlay text effect) -->
         <article id="python" class="detail-skill">
             <h1>Python</h1>
             <img src="imgs/python.jpg">
@@ -166,7 +172,7 @@
     <footer>
         <p>&reg; Arley Díaz Portfolio 2026</p>
     </footer>
-    
+    <!-- JS linked -->
     <script src="script.js"></script>
 </body>
 </html>
